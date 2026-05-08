@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Selling – College Pitch</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0d0d0d;
+    --card: #161616;
+    --border: #2a2a2a;
+    --accent: #c8ff00;
+    --accent2: #ff6b35;
+    --text: #f0f0f0;
+    --muted: #888;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 32px 16px;
+  }
+
+  .wrapper {
+    max-width: 600px;
+    width: 100%;
+  }
+
+  .header {
+    border: 2px solid var(--accent);
+    padding: 28px 28px 20px;
+    margin-bottom: 6px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .header::before {
+    content: '';
+    position: absolute;
+    top: -40px; right: -40px;
+    width: 160px; height: 160px;
+    background: radial-gradient(circle, rgba(200,255,0,0.12), transparent 70%);
+    pointer-events: none;
+  }
+
+  .tag {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 11px;
+    letter-spacing: 4px;
+    color: var(--accent);
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  .header h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(42px, 10vw, 68px);
+    line-height: 0.95;
+    letter-spacing: 2px;
+    color: var(--text);
+  }
+
+  .header h1 span {
+    color: var(--accent);
+  }
+
+  .header p {
+    margin-top: 14px;
+    font-size: 14px;
+    color: var(--muted);
+    line-height: 1.6;
+    max-width: 440px;
+  }
+
+  .section-label {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 10px;
+    letter-spacing: 5px;
+    color: var(--accent2);
+    padding: 18px 0 8px;
+    border-top: 1px solid var(--border);
+    margin-top: 6px;
+  }
+
+  .items-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+
+  .item {
+    background: var(--card);
+    border: 1px solid var(--border);
+    padding: 16px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    transition: border-color 0.2s;
+  }
+
+  .item:hover {
+    border-color: var(--accent);
+  }
+
+  .item-left {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  .item-icon {
+    font-size: 22px;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .item-name {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text);
+    letter-spacing: 0.3px;
+  }
+
+  .item-sub {
+    font-size: 12px;
+    color: var(--muted);
+    margin-top: 3px;
+  }
+
+  .badge {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    padding: 4px 9px;
+    border-radius: 2px;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .badge-warranty {
+    background: rgba(200,255,0,0.1);
+    color: var(--accent);
+    border: 1px solid rgba(200,255,0,0.3);
+  }
+
+  .badge-nowarranty {
+    background: rgba(255,107,53,0.1);
+    color: var(--accent2);
+    border: 1px solid rgba(255,107,53,0.3);
+  }
+
+  .footer-note {
+    margin-top: 4px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    padding: 14px 18px;
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+
+  .footer-note strong {
+    color: var(--text);
+  }
+
+  .cta {
+    margin-top: 4px;
+    background: var(--accent);
+    color: #0d0d0d;
+    padding: 18px 24px;
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 22px;
+    letter-spacing: 3px;
+  }
+
+  .cta span {
+    display: block;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-top: 2px;
+    opacity: 0.7;
+  }
+</style>
+</head>
+<body>
+<div class="wrapper">
+
+  <div class="header">
+    <em class="tag">📢 LPU COLLEGE GROUP — CLEARANCE SALE</em>
+    <h1>SELLING<br><span>GOOD STUFF.</span></h1>
+    <p>Everything is second-hand but well-maintained. Most items come with box & bill. DM to discuss price — open to reasonable offers!</p>
+  </div>
+
+  <!-- Gaming Peripherals -->
+  <div class="section-label">🎮 Gaming Peripherals</div>
+  <div class="items-grid">
+
+    <div class="item">
+      <div class="item-left">
+        <div class="item-icon">🖥️</div>
+        <div>
+          <div class="item-name">LG 24GS65F Gaming Monitor</div>
+          <div class="item-sub">Fast IPS panel — great for competitive gaming</div>
+        </div>
+      </div>
+      <div class="badge badge-warranty">WARRANTY + BOX</div>
+    </div>
+
+    <div class="item">
+      <div class="item-left">
+        <div class="item-icon">⌨️</div>
+        <div>
+          <div class="item-name">Ajazz Hall Effect Keyboard</div>
+          <div class="item-sub">Magnetic switches — smooth & precise</div>
+        </div>
+      </div>
+      <div class="badge badge-warranty">WARRANTY + BOX</div>
+    </div>
+
+    <div class="item">
+      <div class="item-left">
+        <div class="item-icon">🖱️</div>
+        <div>
+          <div class="item-name">Mchose K7 Ultra Mouse</div>
+          <div class="item-sub">Lightweight gaming mouse — great shape</div>
+        </div>
+      </div>
+      <div class="badge badge-warranty">WARRANTY + BOX</div>
+    </div>
+
+    <div class="item">
+      <div class="item-left">
+        <div class="item-icon">🔊</div>
+        <div>
+          <div class="item-name">GoVo Surround 900 Home Theatre</div>
+          <div class="item-sub">Immersive surround sound system</div>
+        </div>
+      </div>
+      <div class="badge badge-nowarranty">NO WARRANTY</div>
+    </div>
+
+    <div class="item">
+      <div class="item-left">
+        <div class="item-icon">🔌</div>
+        <div>
+          <div class="item-name">Ugreen Type-C to DisplayPort 1.4 Cable</div>
+          <div class="item-sub">10ft — 4K/8K ready, braided</div>
+        </div>
+      </div>
+      <div class="badge badge-warranty">WARRANTY + BOX</div>
+    </div>
+
+    <div class="item">
+      <div class="item-left">
+        <div class="item-icon">🌐</div>
+        <div>
+          <div class="item-name">Ugreen CAT8 Braided Ethernet Cable</div>
+          <div class="item-sub">16ft — ultra-fast wired internet</div>
+        </div>
+      </div>
+      <div class="badge badge-warranty">WARRANTY + BOX</div>
+    </div>
+
+    <div class="item">
+      <div class="item-left">
+        <div class="item-icon">💻</div>
+        <div>
+          <div class="item-name">Laptop Stand</div>
+          <div class="item-sub">Ergonomic — keeps your setup clean</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-left">
+        <div class="item-icon">🖱️</div>
+        <div>
+          <div class="item-name">Spinbot XXL Mousepad</div>
+          <div class="item-sub">Extended desk mat — smooth surface</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Sports -->
+  <div class="section-label">⚽ Sports</div>
+  <div class="items-grid">
+
+    <div class="item">
+      <div class="item-left">
+        <div class="item-icon">⚽</div>
+        <div>
+          <div class="item-name">Football</div>
+          <div class="item-sub">Like new</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-left">
+        <div class="item-icon">🏀</div>
+        <div>
+          <div class="item-name">Basketball</div>
+          <div class="item-sub">Like new</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-left">
+        <div class="item-icon">🏸</div>
+        <div>
+          <div class="item-name">Badminton Rackets × 2-3</div>
+          <div class="item-sub">Good condition — some wear</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Furniture -->
+  <div class="section-label">🪑 Furniture</div>
+  <div class="items-grid">
+    <div class="item">
+      <div class="item-left">
+        <div class="item-icon">🪵</div>
+        <div>
+          <div class="item-name">Tables × 2</div>
+          <div class="item-sub">One large table + one regular table</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Kitchen -->
+  <div class="section-label">🍳 Kitchen Items</div>
+  <div class="items-grid">
+    <div class="item">
+      <div class="item-left">
+        <div class="item-icon">🥘</div>
+        <div>
+          <div class="item-name">Pressure Cooker</div>
+          <div class="item-sub">Good condition</div>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="item-left">
+        <div class="item-icon">🔴</div>
+        <div>
+          <div class="item-name">Gas Cylinders</div>
+          <div class="item-sub">Big + Small available</div>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="item-left">
+        <div class="item-icon">🌀</div>
+        <div>
+          <div class="item-name">Mixer &amp; Grinder</div>
+          <div class="item-sub">Fully functional</div>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="item-left">
+        <div class="item-icon">🍽️</div>
+        <div>
+          <div class="item-name">Miscellaneous Kitchen Items</div>
+          <div class="item-sub">Various utensils — bundle deal available</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-note">
+    <strong>📦 Gaming items</strong> — all come with box &amp; bill (except home theatre).<br>
+    <strong>💬 Prices</strong> — negotiable. Serious buyers only please.
+  </div>
+
+  <div class="cta">
+    INTERESTED? SLIDE INTO MY DMs
+    <span>Drop a message with the item you want</span>
+  </div>
+
+</div>
+</body>
+</html>
