@@ -15,9 +15,9 @@
     --text: #f0f0f0;
     --muted: #888;
   }
-
+ 
   * { margin: 0; padding: 0; box-sizing: border-box; }
-
+ 
   body {
     background: var(--bg);
     color: var(--text);
@@ -28,9 +28,9 @@
     align-items: flex-start;
     padding: 32px 16px;
   }
-
+ 
   .wrapper { max-width: 600px; width: 100%; }
-
+ 
   .header {
     border: 2px solid var(--accent);
     padding: 28px 28px 20px;
@@ -38,7 +38,7 @@
     position: relative;
     overflow: hidden;
   }
-
+ 
   .header::before {
     content: '';
     position: absolute;
@@ -47,7 +47,7 @@
     background: radial-gradient(circle, rgba(200,255,0,0.12), transparent 70%);
     pointer-events: none;
   }
-
+ 
   .tag {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 11px;
@@ -56,7 +56,7 @@
     margin-bottom: 10px;
     display: block;
   }
-
+ 
   .header h1 {
     font-family: 'Bebas Neue', sans-serif;
     font-size: clamp(42px, 10vw, 68px);
@@ -64,9 +64,9 @@
     letter-spacing: 2px;
     color: var(--text);
   }
-
+ 
   .header h1 span { color: var(--accent); }
-
+ 
   .header p {
     margin-top: 14px;
     font-size: 14px;
@@ -74,7 +74,7 @@
     line-height: 1.6;
     max-width: 440px;
   }
-
+ 
   .section-label {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 10px;
@@ -84,9 +84,9 @@
     border-top: 1px solid var(--border);
     margin-top: 6px;
   }
-
+ 
   .items-grid { display: flex; flex-direction: column; gap: 3px; }
-
+ 
   .item {
     background: var(--card);
     border: 1px solid var(--border);
@@ -96,19 +96,19 @@
     align-items: center;
     gap: 12px;
   }
-
+ 
   .item:hover { border-color: var(--accent); }
-
+ 
   .item-left { display: flex; align-items: flex-start; gap: 14px; }
-
+ 
   .item-icon { font-size: 22px; flex-shrink: 0; margin-top: 2px; }
-
+ 
   .item-name { font-size: 15px; font-weight: 600; color: var(--text); letter-spacing: 0.3px; }
-
+ 
   .item-sub { font-size: 12px; color: var(--muted); margin-top: 3px; }
-
+ 
   .item-right { display: flex; flex-direction: column; align-items: flex-end; gap: 5px; flex-shrink: 0; }
-
+ 
   .item-price {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 20px;
@@ -116,7 +116,7 @@
     letter-spacing: 1px;
     white-space: nowrap;
   }
-
+ 
   .badge {
     font-size: 10px;
     font-weight: 600;
@@ -125,19 +125,19 @@
     border-radius: 2px;
     white-space: nowrap;
   }
-
+ 
   .badge-warranty {
     background: rgba(200,255,0,0.1);
     color: var(--accent);
     border: 1px solid rgba(200,255,0,0.3);
   }
-
+ 
   .badge-nowarranty {
     background: rgba(255,107,53,0.1);
     color: var(--accent2);
     border: 1px solid rgba(255,107,53,0.3);
   }
-
+ 
   .footer-note {
     margin-top: 4px;
     background: var(--card);
@@ -148,9 +148,9 @@
     color: var(--muted);
     line-height: 1.6;
   }
-
+ 
   .footer-note strong { color: var(--text); }
-
+ 
   .cta {
     margin-top: 4px;
     background: var(--accent);
@@ -161,7 +161,7 @@
     font-size: 22px;
     letter-spacing: 3px;
   }
-
+ 
   .cta span {
     display: block;
     font-family: 'DM Sans', sans-serif;
@@ -175,17 +175,17 @@
 </head>
 <body>
 <div class="wrapper">
-
+ 
   <div class="header">
     <em class="tag">📢 LPU COLLEGE GROUP — CLEARANCE SALE</em>
     <h1>SELLING<br><span>GOOD STUFF.</span></h1>
     <p>Everything well-maintained. Most gaming items are mint with box & bill. Prices are firm but open to reasonable offers!</p>
   </div>
-
+ 
   <!-- Gaming Peripherals -->
   <div class="section-label">🎮 Gaming Peripherals</div>
   <div class="items-grid">
-
+ 
     <div class="item">
       <div class="item-left">
         <div class="item-icon">🖥️</div>
@@ -199,7 +199,7 @@
         <div class="badge badge-warranty">WARRANTY + BOX</div>
       </div>
     </div>
-
+ 
     <div class="item">
       <div class="item-left">
         <div class="item-icon">🖱️</div>
@@ -213,7 +213,7 @@
         <div class="badge badge-warranty">WARRANTY + BOX</div>
       </div>
     </div>
-
+ 
     <div class="item">
       <div class="item-left">
         <div class="item-icon">⌨️</div>
@@ -227,7 +227,7 @@
         <div class="badge badge-warranty">WARRANTY + BOX</div>
       </div>
     </div>
-
+ 
     <div class="item">
       <div class="item-left">
         <div class="item-icon">🔊</div>
@@ -241,7 +241,7 @@
         <div class="badge badge-nowarranty">NO WARRANTY</div>
       </div>
     </div>
-
+ 
     <div class="item">
       <div class="item-left">
         <div class="item-icon">⚡</div>
@@ -254,7 +254,7 @@
         <div class="item-price">₹2,500</div>
       </div>
     </div>
-
+ 
     <div class="item">
       <div class="item-left">
         <div class="item-icon">🔌</div>
@@ -268,7 +268,7 @@
         <div class="badge badge-warranty">WARRANTY + BOX</div>
       </div>
     </div>
-
+ 
     <div class="item">
       <div class="item-left">
         <div class="item-icon">🌐</div>
@@ -281,7 +281,7 @@
         <div class="item-price">₹1,000</div>
       </div>
     </div>
-
+ 
     <div class="item">
       <div class="item-left">
         <div class="item-icon">💻</div>
@@ -294,7 +294,7 @@
         <div class="item-price">₹1,500</div>
       </div>
     </div>
-
+ 
     <div class="item">
       <div class="item-left">
         <div class="item-icon">🖱️</div>
@@ -307,7 +307,7 @@
         <div class="item-price">₹700</div>
       </div>
     </div>
-
+ 
     <div class="item">
       <div class="item-left">
         <div class="item-icon">🖱️</div>
@@ -320,13 +320,13 @@
         <div class="item-price">₹250</div>
       </div>
     </div>
-
+ 
   </div>
-
+ 
   <!-- Sports -->
   <div class="section-label">⚽ Sports</div>
   <div class="items-grid">
-
+ 
     <div class="item">
       <div class="item-left">
         <div class="item-icon">⚽</div>
@@ -339,7 +339,7 @@
         <div class="item-price">₹450</div>
       </div>
     </div>
-
+ 
     <div class="item">
       <div class="item-left">
         <div class="item-icon">🏀</div>
@@ -352,7 +352,7 @@
         <div class="item-price">₹500</div>
       </div>
     </div>
-
+ 
     <div class="item">
       <div class="item-left">
         <div class="item-icon">🏸</div>
@@ -366,13 +366,13 @@
         <div class="badge badge-warranty">BUNDLE</div>
       </div>
     </div>
-
+ 
   </div>
-
+ 
   <!-- Furniture -->
   <div class="section-label">🪑 Furniture</div>
   <div class="items-grid">
-
+ 
     <div class="item">
       <div class="item-left">
         <div class="item-icon">🪵</div>
@@ -385,7 +385,7 @@
         <div class="item-price">₹1,200</div>
       </div>
     </div>
-
+ 
     <div class="item">
       <div class="item-left">
         <div class="item-icon">🪵</div>
@@ -398,7 +398,7 @@
         <div class="item-price">₹800</div>
       </div>
     </div>
-
+ 
     <div class="item">
       <div class="item-left">
         <div class="item-icon">🪑</div>
@@ -411,7 +411,7 @@
         <div class="item-price">₹1,500</div>
       </div>
     </div>
-
+ 
     <div class="item">
       <div class="item-left">
         <div class="item-icon">🪑</div>
@@ -424,13 +424,13 @@
         <div class="item-price">₹400</div>
       </div>
     </div>
-
+ 
   </div>
-
+ 
   <!-- Kitchen -->
   <div class="section-label">🍳 Kitchen Items</div>
   <div class="items-grid">
-
+ 
     <div class="item">
       <div class="item-left">
         <div class="item-icon">🔴</div>
@@ -443,7 +443,7 @@
         <div class="item-price">₹600</div>
       </div>
     </div>
-
+ 
     <div class="item">
       <div class="item-left">
         <div class="item-icon">🔴</div>
@@ -456,7 +456,7 @@
         <div class="item-price">₹2,000</div>
       </div>
     </div>
-
+ 
     <div class="item">
       <div class="item-left">
         <div class="item-icon">🌀</div>
@@ -469,7 +469,7 @@
         <div class="item-price">₹800</div>
       </div>
     </div>
-
+ 
     <div class="item">
       <div class="item-left">
         <div class="item-icon">🍽️</div>
@@ -482,20 +482,21 @@
         <div class="item-price">₹2,000</div>
       </div>
     </div>
-
+ 
   </div>
-
+ 
   <div class="footer-note">
     <strong>📦 Gaming items</strong> — all come with box &amp; bill (except home theatre).<br>
     <strong>💬 Prices</strong> — firm but open to reasonable offers. Serious buyers only please.
   </div>
-
+ 
   <div class="cta">
     INTERESTED? CONTACT ME
     <span>📞 8269536853 &nbsp;|&nbsp; 💬 WhatsApp: 9174613102</span>
     <span>✉️ writetorishabhdubey@gmail.com</span>
   </div>
-
+ 
 </div>
 </body>
 </html>
+ 
