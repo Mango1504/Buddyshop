@@ -29,10 +29,7 @@
     padding: 32px 16px;
   }
 
-  .wrapper {
-    max-width: 600px;
-    width: 100%;
-  }
+  .wrapper { max-width: 600px; width: 100%; }
 
   .header {
     border: 2px solid var(--accent);
@@ -68,9 +65,7 @@
     color: var(--text);
   }
 
-  .header h1 span {
-    color: var(--accent);
-  }
+  .header h1 span { color: var(--accent); }
 
   .header p {
     margin-top: 14px;
@@ -90,60 +85,45 @@
     margin-top: 6px;
   }
 
-  .items-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 3px;
-  }
+  .items-grid { display: flex; flex-direction: column; gap: 3px; }
 
   .item {
     background: var(--card);
     border: 1px solid var(--border);
-    padding: 16px 20px;
+    padding: 14px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 12px;
-    transition: border-color 0.2s;
   }
 
-  .item:hover {
-    border-color: var(--accent);
-  }
+  .item:hover { border-color: var(--accent); }
 
-  .item-left {
-    display: flex;
-    align-items: flex-start;
-    gap: 14px;
-  }
+  .item-left { display: flex; align-items: flex-start; gap: 14px; }
 
-  .item-icon {
-    font-size: 22px;
-    flex-shrink: 0;
-    margin-top: 2px;
-  }
+  .item-icon { font-size: 22px; flex-shrink: 0; margin-top: 2px; }
 
-  .item-name {
-    font-size: 15px;
-    font-weight: 600;
-    color: var(--text);
-    letter-spacing: 0.3px;
-  }
+  .item-name { font-size: 15px; font-weight: 600; color: var(--text); letter-spacing: 0.3px; }
 
-  .item-sub {
-    font-size: 12px;
-    color: var(--muted);
-    margin-top: 3px;
+  .item-sub { font-size: 12px; color: var(--muted); margin-top: 3px; }
+
+  .item-right { display: flex; flex-direction: column; align-items: flex-end; gap: 5px; flex-shrink: 0; }
+
+  .item-price {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    color: var(--accent);
+    letter-spacing: 1px;
+    white-space: nowrap;
   }
 
   .badge {
     font-size: 10px;
     font-weight: 600;
     letter-spacing: 1.5px;
-    padding: 4px 9px;
+    padding: 3px 8px;
     border-radius: 2px;
     white-space: nowrap;
-    flex-shrink: 0;
   }
 
   .badge-warranty {
@@ -169,9 +149,7 @@
     line-height: 1.6;
   }
 
-  .footer-note strong {
-    color: var(--text);
-  }
+  .footer-note strong { color: var(--text); }
 
   .cta {
     margin-top: 4px;
@@ -201,7 +179,7 @@
   <div class="header">
     <em class="tag">📢 LPU COLLEGE GROUP — CLEARANCE SALE</em>
     <h1>SELLING<br><span>GOOD STUFF.</span></h1>
-    <p>Everything is second-hand but well-maintained. Most items come with box & bill. DM to discuss price — open to reasonable offers!</p>
+    <p>Everything well-maintained. Most gaming items are mint with box & bill. Prices are firm but open to reasonable offers!</p>
   </div>
 
   <!-- Gaming Peripherals -->
@@ -216,18 +194,10 @@
           <div class="item-sub">Fast IPS panel — great for competitive gaming</div>
         </div>
       </div>
-      <div class="badge badge-warranty">WARRANTY + BOX</div>
-    </div>
-
-    <div class="item">
-      <div class="item-left">
-        <div class="item-icon">⌨️</div>
-        <div>
-          <div class="item-name">Ajazz Hall Effect Keyboard</div>
-          <div class="item-sub">Magnetic switches — smooth & precise</div>
-        </div>
+      <div class="item-right">
+        <div class="item-price">₹9,000</div>
+        <div class="badge badge-warranty">WARRANTY + BOX</div>
       </div>
-      <div class="badge badge-warranty">WARRANTY + BOX</div>
     </div>
 
     <div class="item">
@@ -235,10 +205,27 @@
         <div class="item-icon">🖱️</div>
         <div>
           <div class="item-name">Mchose K7 Ultra Mouse</div>
-          <div class="item-sub">Lightweight gaming mouse — great shape</div>
+          <div class="item-sub">Lightweight gaming mouse — mint condition</div>
         </div>
       </div>
-      <div class="badge badge-warranty">WARRANTY + BOX</div>
+      <div class="item-right">
+        <div class="item-price">₹7,000</div>
+        <div class="badge badge-warranty">WARRANTY + BOX</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-left">
+        <div class="item-icon">⌨️</div>
+        <div>
+          <div class="item-name">Ajazz Hall Effect Keyboard</div>
+          <div class="item-sub">Magnetic switches — buttery smooth</div>
+        </div>
+      </div>
+      <div class="item-right">
+        <div class="item-price">₹3,200</div>
+        <div class="badge badge-warranty">WARRANTY + BOX</div>
+      </div>
     </div>
 
     <div class="item">
@@ -249,16 +236,9 @@
           <div class="item-sub">Immersive surround sound system</div>
         </div>
       </div>
-      <div class="badge badge-nowarranty">NO WARRANTY</div>
-    </div>
-
-    <div class="item">
-      <div class="item-left">
-        <div class="item-icon">🖱️</div>
-        <div>
-          <div class="item-name">Mouse Bungee</div>
-          <div class="item-sub">Mint condition — keeps your cable off the desk</div>
-        </div>
+      <div class="item-right">
+        <div class="item-price">₹3,200</div>
+        <div class="badge badge-nowarranty">NO WARRANTY</div>
       </div>
     </div>
 
@@ -270,6 +250,9 @@
           <div class="item-sub">Mint condition — fast charging beast</div>
         </div>
       </div>
+      <div class="item-right">
+        <div class="item-price">₹2,500</div>
+      </div>
     </div>
 
     <div class="item">
@@ -280,7 +263,10 @@
           <div class="item-sub">10ft — 4K/8K ready, braided</div>
         </div>
       </div>
-      <div class="badge badge-warranty">WARRANTY + BOX</div>
+      <div class="item-right">
+        <div class="item-price">₹2,000</div>
+        <div class="badge badge-warranty">WARRANTY + BOX</div>
+      </div>
     </div>
 
     <div class="item">
@@ -291,16 +277,34 @@
           <div class="item-sub">16ft — ultra-fast wired internet</div>
         </div>
       </div>
-      <div class="badge badge-warranty">WARRANTY + BOX</div>
+      <div class="item-right">
+        <div class="item-price">₹1,000</div>
+      </div>
     </div>
 
     <div class="item">
       <div class="item-left">
         <div class="item-icon">💻</div>
         <div>
-          <div class="item-name">Laptop Stand</div>
+          <div class="item-name">Portronics Rotatable Laptop Stand</div>
           <div class="item-sub">Ergonomic — keeps your setup clean</div>
         </div>
+      </div>
+      <div class="item-right">
+        <div class="item-price">₹1,500</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-left">
+        <div class="item-icon">🖱️</div>
+        <div>
+          <div class="item-name">Mouse Bungee</div>
+          <div class="item-sub">Mint condition — keeps your cable off the desk</div>
+        </div>
+      </div>
+      <div class="item-right">
+        <div class="item-price">₹250</div>
       </div>
     </div>
 
@@ -311,6 +315,9 @@
           <div class="item-name">Spinbot XXL Mousepad</div>
           <div class="item-sub">Extended desk mat — smooth surface</div>
         </div>
+      </div>
+      <div class="item-right">
+        <div class="item-price">₹700</div>
       </div>
     </div>
 
@@ -324,9 +331,12 @@
       <div class="item-left">
         <div class="item-icon">⚽</div>
         <div>
-          <div class="item-name">Football</div>
+          <div class="item-name">Nivia Football</div>
           <div class="item-sub">Like new</div>
         </div>
+      </div>
+      <div class="item-right">
+        <div class="item-price">₹450</div>
       </div>
     </div>
 
@@ -334,9 +344,12 @@
       <div class="item-left">
         <div class="item-icon">🏀</div>
         <div>
-          <div class="item-name">Basketball</div>
+          <div class="item-name">Nivia Basketball</div>
           <div class="item-sub">Like new</div>
         </div>
+      </div>
+      <div class="item-right">
+        <div class="item-price">₹500</div>
       </div>
     </div>
 
@@ -348,6 +361,10 @@
           <div class="item-sub">Good condition — some wear</div>
         </div>
       </div>
+      <div class="item-right">
+        <div class="item-price">₹400</div>
+        <div class="badge badge-warranty">BUNDLE</div>
+      </div>
     </div>
 
   </div>
@@ -355,20 +372,39 @@
   <!-- Furniture -->
   <div class="section-label">🪑 Furniture</div>
   <div class="items-grid">
+
     <div class="item">
       <div class="item-left">
         <div class="item-icon">🪵</div>
         <div>
-          <div class="item-name">Tables × 2</div>
-          <div class="item-sub">One large table + one regular table</div>
+          <div class="item-name">Large Table (4×3 ft)</div>
+          <div class="item-sub">Sturdy — great for study or work</div>
         </div>
       </div>
+      <div class="item-right">
+        <div class="item-price">₹1,200</div>
+      </div>
     </div>
+
+    <div class="item">
+      <div class="item-left">
+        <div class="item-icon">🪵</div>
+        <div>
+          <div class="item-name">Small Table (3×2 ft)</div>
+          <div class="item-sub">Compact and handy</div>
+        </div>
+      </div>
+      <div class="item-right">
+        <div class="item-price">₹800</div>
+      </div>
+    </div>
+
   </div>
 
   <!-- Kitchen -->
   <div class="section-label">🍳 Kitchen Items</div>
   <div class="items-grid">
+
     <div class="item">
       <div class="item-left">
         <div class="item-icon">🥘</div>
@@ -377,7 +413,11 @@
           <div class="item-sub">Good condition</div>
         </div>
       </div>
+      <div class="item-right">
+        <div class="item-price">DM for price</div>
+      </div>
     </div>
+
     <div class="item">
       <div class="item-left">
         <div class="item-icon">🔴</div>
@@ -386,7 +426,11 @@
           <div class="item-sub">Big + Small available</div>
         </div>
       </div>
+      <div class="item-right">
+        <div class="item-price">DM for price</div>
+      </div>
     </div>
+
     <div class="item">
       <div class="item-left">
         <div class="item-icon">🌀</div>
@@ -395,7 +439,11 @@
           <div class="item-sub">Fully functional</div>
         </div>
       </div>
+      <div class="item-right">
+        <div class="item-price">DM for price</div>
+      </div>
     </div>
+
     <div class="item">
       <div class="item-left">
         <div class="item-icon">🍽️</div>
@@ -404,12 +452,16 @@
           <div class="item-sub">Various utensils — bundle deal available</div>
         </div>
       </div>
+      <div class="item-right">
+        <div class="item-price">DM for price</div>
+      </div>
     </div>
+
   </div>
 
   <div class="footer-note">
     <strong>📦 Gaming items</strong> — all come with box &amp; bill (except home theatre).<br>
-    <strong>💬 Prices</strong> — negotiable. Serious buyers only please.
+    <strong>💬 Prices</strong> — firm but open to reasonable offers. Serious buyers only please.
   </div>
 
   <div class="cta">
